@@ -23,7 +23,7 @@ services:
     ports:
       - "57000:57000/tcp" 
     volumes:
-      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      - ./telegraf/telegraf.conf:/etc/telegraf/telegraf.conf:ro
     restart: unless-stopped
 
   grafana:
